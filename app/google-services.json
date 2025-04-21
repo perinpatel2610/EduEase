@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1049252402904",
+    "project_id": "android-final-project-d655d",
+    "storage_bucket": "android-final-project-d655d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1049252402904:android:703d6a8f3fce6830b7a9ad",
+        "android_client_info": {
+          "package_name": "com.wlu.eduease"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcI5HkMfakCiFgnharfLlu5_czQ8CycIQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

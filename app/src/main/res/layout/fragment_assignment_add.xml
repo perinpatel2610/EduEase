@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Subject Spinner -->
+        <Spinner
+            android:id="@+id/spinnerSubject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Title EditText -->
+        <EditText
+            android:id="@+id/editTextTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/assignment_title"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Date EditText with DatePickerDialog -->
+        <EditText
+            android:id="@+id/editTextDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/select_date"
+            android:focusable="false"
+            android:clickable="true"
+            android:layout_marginBottom="12dp" />
+
+        <!-- PDF URL EditText -->
+        <EditText
+            android:id="@+id/editTextPdfUrl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/pdf_url"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Save Assignment Button -->
+        <Button
+            android:id="@+id/buttonSaveAssignment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/save_assignment"
+            android:layout_gravity="end" />
+
+        <!-- HorizontalScrollView to make the TableLayout scrollable horizontally -->
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp">
+
+            <!-- TableLayout to display assignments -->
+            <TableLayout
+                android:id="@+id/tableLayoutAssignments"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:stretchColumns="1,2,3,4"
+                android:padding="8dp"
+                android:background="@android:color/white"
+                android:layout_gravity="center">
+
+                <!-- Header Row -->
+                <TableRow
+                    android:background="@android:color/darker_gray"
+                    android:padding="8dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/subject"
+                        android:textColor="@android:color/white"
+                        android:paddingEnd="8dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/title"
+                        android:textColor="@android:color/white"
+                        android:paddingEnd="8dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/date"
+                        android:textColor="@android:color/white"
+                        android:paddingEnd="8dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pdf_url"
+                        android:textColor="@android:color/white"/>
+
+                </TableRow>
+
+                <!-- Placeholder for data rows -->
+                <!-- Add TableRow elements dynamically in your Java/Kotlin code -->
+            </TableLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+</ScrollView>

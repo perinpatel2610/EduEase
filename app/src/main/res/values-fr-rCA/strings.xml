@@ -1,0 +1,93 @@
+<resources>
+    <string name="app_name">EduEase</string>
+    <string name="app_name_txt">Bienvenue sur EduEase</string>
+    <string name="welcome_message">Bienvenue %1$s !</string>
+    <string name="login">Se connecter</string>
+    <string name="email">E-mail</string>
+    <string name="password">Mot de passe</string>
+    <string name="register">S\'inscrire</string>
+    <string name="click_here_to_login">Cliquez ici pour vous connecter</string>
+    <string name="click_to_register">Vous n\'avez pas de compte ? Inscrivez-vous</string>
+    <string name="logout">Se déconnecter</string>
+    <string name="full_name">Nom complet</string>
+    <string name="phone">Téléphone</string>
+    <string name="confirm_password">Confirmer le mot de passe</string>
+    <string name="navigation_drawer_open">Ouvrir le tiroir de navigation</string>
+    <string name="navigation_drawer_close">Fermer le tiroir de navigation</string>
+    <string-array name="spinner_items">
+        <item>Enseignant</item>
+        <item>Étudiant</item>
+        <item>Parent</item>
+        <!-- Ajouter plus d'éléments si nécessaire -->
+    </string-array>
+    <string name="hello_blank_fragment">Bonjour fragment vide</string>
+    <string name="contact_us">Pour toute demande ou information complémentaire sur EduEase, veuillez nous contacter à eduease@gmail.com.</string>
+    <string name="contact_us_header">Nous Contacter</string>
+    <string name="mission">
+        <![CDATA[
+        Chez EduEase, notre mission est d\'améliorer l\'expérience éducative en fournissant un outil intuitif et efficace pour les étudiants et les enseignants. Nous nous efforçons de combler le fossé entre les éducateurs et les apprenants, en veillant à ce que les ressources académiques soient facilement accessibles et organisées.
+        ]]>
+    </string>
+    <string name="mission_header">Notre Mission</string>
+    <string name="about">
+        Bienvenue sur EduEase, le meilleur organisateur pour étudiants conçu pour simplifier votre parcours académique. EduEase fonctionne comme une plateforme complète où les enseignants peuvent télécharger du contenu éducatif et saisir les notes des étudiants, et où les étudiants peuvent accéder facilement aux matériaux de cours, suivre leurs notes et gérer leurs calendriers.
+    </string>
+    <string name="about_header">À Propos de Nous</string>
+    <string name="parent_teacher_meeting_schedule">Calendrier des Réunions Parents-Professeurs</string>
+    <string name="faculty_name">Nom de l\'enseignant :</string>
+    <string name="subject">Matière :</string>
+    <string name="time">Heure :</string>
+    <string name="room_number">Numéro de la salle :</string>
+    <string name="view_grades">Voir les notes</string>
+    <string name="student">Étudiant</string>
+    <string name="faculty">Enseignant</string>
+    <string name="parent">Parent</string>
+    <string name="name">Nom</string>
+    <string name="phone1">Téléphone</string>
+    <string name="welcome_to_eduease">Bienvenue sur EduEase</string>
+    <string name="day">Jour :</string>
+    <string name="room">Salle :</string>
+    <string name="quiz_title">Titre du Quiz :</string>
+    <string name="date">Date :</string>
+    <string name="pdf_url">URL du PDF :</string>
+    <string name="title">Titre :</string>
+    <string name="mark">Note :</string>
+    <string name="marks">Notes</string>
+    <string name="select_test">Sélectionner un test</string>
+    <string name="enter_marks_for_students">Saisir les notes pour les étudiants</string>
+    <string name="save_marks">Enregistrer les notes</string>
+    <string name="quiz_date_yyyy_mm_dd">Date du Quiz (YYYY-MM-DD)</string>
+    <string name="save_quiz">Enregistrer le Quiz</string>
+    <string name="quiz_id">ID du Quiz</string>
+    <string name="test_schedule">Calendrier des Tests</string>
+    <string name="class_schedule">Emploi du Temps des Cours</string>
+    <string name="course_material">Matériel de Cours</string>
+    <string name="tests_quizzes">Tests/Quiz</string>
+    <string name="assignments">Devoirs</string>
+    <string name="grades">Notes</string>
+    <string name="faculty_name1">Nom de l\'enseignant</string>
+    <string name="save_meeting">Enregistrer la Réunion</string>
+    <string name="teacher">la faculté</string>
+    <string name="tests_quizzes_grades">Notes des Tests/Quiz</string>
+    <string name="add_assignments">Ajouter des Devoirs</string>
+    <string name="assignments_grades">Notes des Devoirs</string>
+    <string name="at_risk_students">Étudiants à Risque</string>
+    <string name="ptm_schedule">Calendrier PTM</string>
+    <string name="course_materials">Matériaux de Cours</string>
+    <string name="enter_course_material">Saisir le matériel de cours</string>
+    <string name="save">Enregistrer</string>
+    <string name="saved_course_material_will_appear_here">Le matériel de cours enregistré apparaîtra ici</string>
+    <string name="select_day">Sélectionner le jour</string>
+    <string name="select_time">Sélectionner l\'heure</string>
+    <string name="assignment_title">Titre du Devoir</string>
+    <string name="select_date">Sélectionner la date</string>
+    <string name="save_assignment">Enregistrer le Devoir</string>
+    <string name="Click_here_to_login">Cliquez ici pour vous connecter</string>
+    <string name="home">Accueil</string>
+    <string name="settings">Paramètres</string>
+    <string name="about_us">À Propos de Nous</string>
+    <string name="delete">supprimer</string>
+    <string name="add_attendance">Add Attendance</string>
+    <string name="viewAttendanceButton">View Attendance</string>
+
+</resources>

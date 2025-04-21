@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    app:cardElevation="4dp"
+    app:cardCornerRadius="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:background="@android:color/white">
+
+        <!-- Quiz Title -->
+        <TextView
+            android:id="@+id/quizTitleLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/quiz_title"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true" />
+
+        <TextView
+            android:id="@+id/quizTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/quizTitleLabel"
+            android:layout_marginStart="8dp"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:layout_alignBaseline="@id/quizTitleLabel"
+            android:layout_alignParentTop="true" />
+
+        <!-- Quiz Subject -->
+        <TextView
+            android:id="@+id/quizSubjectLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/subject"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_below="@id/quizTitleLabel"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/quizSubject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/quizSubjectLabel"
+            android:layout_marginStart="8dp"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:layout_below="@id/quizTitle"
+            android:layout_marginTop="8dp" />
+
+        <!-- Quiz Date -->
+        <TextView
+            android:id="@+id/quizDateLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/date"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_below="@id/quizSubject"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/quizDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/quizDateLabel"
+            android:layout_marginStart="8dp"
+            android:textSize="14sp"
+            android:textColor="@android:color/darker_gray"
+            android:layout_below="@id/quizSubject"
+            android:layout_marginTop="8dp" />
+
+        <!-- Quiz PDF URL -->
+        <TextView
+            android:id="@+id/quizPdfUrlLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pdf_url"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_below="@id/quizDate"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/quizPdfUrl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/quizPdfUrlLabel"
+            android:layout_marginStart="8dp"
+            android:textSize="14sp"
+            android:textColor="@android:color/holo_blue_dark"
+            android:linksClickable="true"
+            android:layout_below="@id/quizDate"
+            android:layout_marginTop="8dp" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

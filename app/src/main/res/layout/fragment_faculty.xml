@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity"
+    android:background="?android:attr/windowBackground">
+
+    <TextView
+        android:id="@+id/roleTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/teacher"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/cardView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginBottom="16dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/fragment_container"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/roleTitle">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:rowCount="5"
+            android:padding="8dp"
+            android:alignmentMode="alignMargins">
+
+            <!-- Test Schedule Button -->
+            <Button
+                android:id="@+id/btnTestSchedule"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:padding="16dp"
+                android:text="@string/test_schedule"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:backgroundTint="?attr/colorPrimary"
+                android:drawableLeft="@drawable/test_s"
+                android:drawablePadding="8dp"/>
+
+            <!-- Class Schedule Button -->
+            <Button
+                android:id="@+id/btnClassSchedule"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:padding="16dp"
+                android:text="@string/class_schedule"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:backgroundTint="?attr/colorPrimary"
+                android:drawableLeft="@drawable/class_s"/>
+
+            <!-- Course Material Button -->
+            <Button
+                android:id="@+id/btnCourseMaterial"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:padding="16dp"
+                android:text="@string/course_material"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:backgroundTint="?attr/colorPrimary"
+                android:drawableLeft="@drawable/courses"/>
+
+            <!-- Tests/Quizzes Button -->
+            <Button
+                android:id="@+id/btnTestsQuizzes"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:padding="16dp"
+                android:text="@string/tests_quizzes_grades"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:backgroundTint="?attr/colorPrimary"
+                android:drawableLeft="@drawable/grades"/>
+
+            <!-- Assignments Button -->
+            <Button
+                android:id="@+id/btnAssignments"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:padding="10dp"
+                android:text="@string/add_assignments"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:backgroundTint="?attr/colorPrimary"
+                android:drawableLeft="@drawable/add_assign"/>
+
+            <!-- Grades Button -->
+            <Button
+                android:id="@+id/btnGrades"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:padding="16dp"
+                android:text="@string/assignments_grades"
+                android:textSize="14sp"
+                android:textColor="@android:color/white"
+                android:backgroundTint="?attr/colorPrimary"/>
+
+            <!-- At-Risk Students Button -->
+            <Button
+                android:id="@+id/btnAtRiskStudents"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:padding="16dp"
+                android:text="@string/at_risk_students"
+                android:textSize="14sp"
+                android:textColor="@android:color/white"
+                android:backgroundTint="?attr/colorPrimary"/>
+
+            <!-- PTM Schedule Button -->
+            <Button
+                android:id="@+id/btnPTMSchedule"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:padding="16dp"
+                android:text="@string/ptm_schedule"
+                android:textSize="14sp"
+                android:textColor="@android:color/white"
+                android:backgroundTint="?attr/colorPrimary"/>
+
+            <!-- Add Attendance Button -->
+            <Button
+                android:id="@+id/addAttendanceButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:padding="16dp"
+                android:text="@string/add_attendance"
+                android:textSize="14sp"
+                android:textColor="@android:color/white"
+                android:backgroundTint="?attr/colorPrimary"/>
+
+            <!-- View Attendance Button -->
+            <Button
+                android:id="@+id/viewAttendanceButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:padding="16dp"
+                android:text="@string/viewAttendanceButton"
+                android:textSize="14sp"
+                android:textColor="@android:color/white"
+                android:backgroundTint="?attr/colorPrimary"/>
+
+        </GridLayout>
+    </androidx.cardview.widget.CardView>
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

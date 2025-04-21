@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".parent.ParentHome">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Label for PTM Schedule -->
+            <TextView
+                android:id="@+id/ptmScheduleLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/parent_teacher_meeting_schedule"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="16dp" />
+
+            <CalendarView
+                android:id="@+id/calendarView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ptmScheduleLabel"
+                android:layout_marginBottom="16dp"/>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/ptmScheduleCardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/calendarView"
+                android:layout_marginBottom="16dp"
+                android:padding="16dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <!-- Faculty Name Label and Value -->
+                    <TextView
+                        android:id="@+id/facultyNameLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/faculty_name"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp" />
+
+                    <TextView
+                        android:id="@+id/facultyNameTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/facultyNameLabel"
+                        android:layout_alignBaseline="@id/facultyNameLabel"
+                        android:layout_marginStart="8dp" />
+
+                    <!-- Subject Label and Value -->
+                    <TextView
+                        android:id="@+id/subjectLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/facultyNameLabel"
+                        android:text="@string/subject"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp" />
+
+                    <TextView
+                        android:id="@+id/subjectTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/subjectLabel"
+                        android:layout_alignBaseline="@id/subjectLabel"
+                        android:layout_marginStart="8dp" />
+
+                    <!-- Time Label and Value -->
+                    <TextView
+                        android:id="@+id/timeLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/subjectLabel"
+                        android:text="@string/time"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp" />
+
+                    <TextView
+                        android:id="@+id/timeTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/timeLabel"
+                        android:layout_alignBaseline="@id/timeLabel"
+                        android:layout_marginStart="8dp" />
+
+                    <!-- Room Number Label and Value -->
+                    <TextView
+                        android:id="@+id/roomLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/timeLabel"
+                        android:text="@string/room_number"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp" />
+
+                    <TextView
+                        android:id="@+id/roomTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/roomLabel"
+                        android:layout_alignBaseline="@id/roomLabel"
+                        android:layout_marginStart="8dp" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- Button for Grades -->
+            <Button
+                android:id="@+id/gradesButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ptmScheduleCardView"
+                android:text="@string/view_grades"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"
+                android:padding="12dp"
+                android:backgroundTint="?attr/colorPrimary"
+                android:textColor="@android:color/white" />
+
+
+            <Button
+                android:id="@+id/btnAtRiskStudents"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_below="@+id/gradesButton"
+                android:padding="16dp"
+                android:text="@string/at_risk_students"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:backgroundTint="?attr/colorPrimary" />
+
+            <Button
+                android:id="@+id/viewAttendanceButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/btnAtRiskStudents"
+                android:layout_gravity="center"
+                android:padding="16dp"
+                android:text="@string/viewAttendanceButton"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:backgroundTint="?attr/colorPrimary" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</FrameLayout>

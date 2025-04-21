@@ -1,0 +1,124 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <Spinner
+        android:id="@+id/spinnerSubject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_alignParentTop="true" />
+
+    <EditText
+        android:id="@+id/editTextTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/quiz_title"
+        android:layout_below="@id/spinnerSubject"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/editTextDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/quiz_date_yyyy_mm_dd"
+        android:layout_below="@id/editTextTitle"
+        android:layout_marginBottom="16dp"
+        android:focusable="false"
+        android:clickable="true" />
+
+    <EditText
+        android:id="@+id/editTextPdfUrl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/pdf_url"
+        android:layout_below="@id/editTextDate"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/buttonSaveQuiz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/save_quiz"
+        android:layout_below="@id/editTextPdfUrl" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonSaveQuiz"
+        android:layout_marginTop="16dp">
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableLayout
+                android:id="@+id/tableLayoutQuizzes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:stretchColumns="1"
+                android:padding="8dp"
+                android:background="@drawable/table_border">
+
+                <!-- Table header row -->
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/quiz_id"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:padding="8dp"
+                        android:background="@drawable/table_header_border" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="@string/subject"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:padding="8dp"
+                        android:background="@drawable/table_header_border" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:text="@string/title"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:padding="8dp"
+                        android:background="@drawable/table_header_border" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="@string/date"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:padding="8dp"
+                        android:background="@drawable/table_header_border" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="@string/pdf_url"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:padding="8dp"
+                        android:background="@drawable/table_header_border" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/delete"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:padding="8dp"
+                        android:background="@drawable/table_header_border" />
+                </TableRow>
+            </TableLayout>
+        </HorizontalScrollView>
+    </ScrollView>
+</RelativeLayout>

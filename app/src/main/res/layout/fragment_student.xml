@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/roleTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/student"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"/>
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="4"
+        android:alignmentMode="alignMargins"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:id="@+id/btnTestSchedule"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_rowWeight="1"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:text="@string/test_schedule"
+            android:drawableLeft="@drawable/test_s"
+            android:drawablePadding="8dp"/>
+
+        <Button
+            android:id="@+id/btnClassSchedule"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="@string/class_schedule"
+            android:layout_margin="8dp"
+            android:drawableLeft="@drawable/class_s"/>
+
+        <Button
+            android:id="@+id/btnCourseMaterial"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="@string/course_material"
+            android:layout_margin="8dp"
+            android:drawableLeft="@drawable/courses"/>
+
+        <Button
+            android:id="@+id/btnAssignments"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="@string/assignments"
+            android:layout_margin="8dp"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:drawableLeft="@drawable/add_assign"/>
+    </GridLayout>
+
+    <Button
+        android:id="@+id/btnGrades"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:text="@string/grades"
+        android:layout_margin="8dp"
+        android:drawableLeft="@drawable/grades"/>
+    <Button
+        android:id="@+id/viewAttendanceButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:layout_margin="8dp"
+        android:text="@string/viewAttendanceButton" />
+
+</LinearLayout>

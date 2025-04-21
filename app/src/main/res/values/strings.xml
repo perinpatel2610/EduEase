@@ -1,0 +1,93 @@
+<resources>
+    <string name="app_name">EduEase</string>
+    <string name="app_name_txt">Welcome to EduEase</string>
+    <string name="welcome_message">Welcome %1$s !</string>
+
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="register">Register</string>
+    <string name="click_here_to_login">Click here to login</string>
+    <string name="click_to_register">Don\'t have an account? Register</string>
+    <string name="logout">Logout</string>
+    <string name="full_name">Full Name</string>
+    <string name="phone">Phone</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string-array name="spinner_items">
+        <item>Faculty</item>
+        <item>Student</item>
+        <item>Parent</item>
+        <!-- Add more items as needed -->
+    </string-array>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="contact_us">For inquiries or more information about EduEase, please contact us at eduease@gmail.com.</string>
+    <string name="contact_us_header">Contact Us</string>
+    <string name="mission">
+        <![CDATA[
+        At EduEase, our mission is to enhance the educational experience by providing an intuitive and efficient tool for both students and teachers. We strive to bridge the gap between educators and learners, ensuring that academic resources are easily accessible and organized.
+        ]]>
+    </string>
+    <string name="mission_header">Our Mission</string>
+    <string name="about">
+        Welcome to EduEase, the ultimate student organizer designed to simplify your academic journey. EduEase functions as a full-featured platform where teachers can upload educational content and input student grades, and students can seamlessly access course materials, track their grades, and manage their calendars.
+    </string>
+    <string name="about_header">About Us</string>
+    <string name="parent_teacher_meeting_schedule">Parent-Teacher Meeting Schedule</string>
+    <string name="faculty_name">Faculty Name:</string>
+    <string name="subject">Subject:</string>
+    <string name="time">Time:</string>
+    <string name="room_number">Room Number:</string>
+    <string name="view_grades">View Grades</string>
+    <string name="student">Student</string>
+    <string name="faculty">Faculty</string>
+    <string name="parent">Parent</string>
+    <string name="name">Name</string>
+    <string name="phone1">Phone</string>
+    <string name="welcome_to_eduease">Welcome to EduEase</string>
+    <string name="day">Day:</string>
+    <string name="room">Room:</string>
+    <string name="quiz_title">Quiz Title:</string>
+    <string name="date">Date:</string>
+    <string name="pdf_url">PDF URL:</string>
+    <string name="title">Title:</string>
+    <string name="mark">Mark:</string>
+    <string name="marks">Marks</string>
+    <string name="select_test">Select Test</string>
+    <string name="enter_marks_for_students">Enter Marks for Students</string>
+    <string name="save_marks">Save Marks</string>
+    <string name="quiz_date_yyyy_mm_dd">Quiz Date (YYYY-MM-DD)</string>
+    <string name="save_quiz">Save Quiz</string>
+    <string name="quiz_id">Quiz ID</string>
+    <string name="test_schedule">Test Schedule</string>
+    <string name="class_schedule">Class Schedule</string>
+    <string name="course_material">Course Material</string>
+    <string name="tests_quizzes">Tests/Quizzes</string>
+    <string name="assignments">Assignments</string>
+    <string name="grades">Grades</string>
+    <string name="faculty_name1">Faculty Name</string>
+    <string name="save_meeting">Save Meeting</string>
+    <string name="teacher">Faculty</string>
+    <string name="tests_quizzes_grades">Tests/Quizzes Grades</string>
+    <string name="add_assignments">Add Assignments</string>
+    <string name="assignments_grades">Assignments Grades</string>
+    <string name="at_risk_students">At-Risk Students</string>
+    <string name="ptm_schedule">PTM Schedule</string>
+    <string name="course_materials">Course Materials</string>
+    <string name="enter_course_material">Enter Course Material</string>
+    <string name="save">Save</string>
+    <string name="saved_course_material_will_appear_here">Saved course material will appear here</string>
+    <string name="select_day">Select Day</string>
+    <string name="select_time">Select Time</string>
+    <string name="assignment_title">Assignment Title</string>
+    <string name="select_date">Select Date</string>
+    <string name="save_assignment">Save Assignment</string>
+    <string name="Click_here_to_login">Click here to login</string>
+    <string name="home">Home</string>
+    <string name="settings">Settings</string>
+    <string name="about_us">About Us</string>
+    <string name="delete">delete</string>
+    <string name="add_attendance">Add Attendance</string>
+    <string name="viewAttendanceButton">View Attendance</string>
+</resources>
